@@ -9,13 +9,14 @@
 
 
 #include "../Header Files/AccessDescriptor.h"
+#include "../Header Files/FilesystemObject.h"
 #include <string>
 #include <vector>
 using namespace std;
 
-AccessDescriptor::AccessDescriptor():allowedOperations()
+AccessDescriptor::AccessDescriptor(FilesystemObject *fo):allowedOperations()
 {
-
+	protectedObject = fo;
 }
 
 void AccessDescriptor::add(string operationName)

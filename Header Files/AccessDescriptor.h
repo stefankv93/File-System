@@ -25,7 +25,7 @@ private:
 protected:
 	FilesystemObject *protectedObject;
 public:
-	AccessDescriptor();
+	AccessDescriptor(FilesystemObject *fo);
 	void add(string operationName);
 	void remove(string operationName);
 	const vector<string>& getAllowedOperations() const;
