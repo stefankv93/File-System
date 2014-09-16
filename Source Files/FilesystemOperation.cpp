@@ -13,7 +13,7 @@
 #include <string>
 using namespace std;
 
-FilesystemOperation::FilesystemOperation(string fOpName, FilesystemObject *fo):objParameter(fo)
+FilesystemOperation::FilesystemOperation(string fOpName, FilesystemObject &fo):objParameter(&fo)
 {
 	opName = fOpName;
 }

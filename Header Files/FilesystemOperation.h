@@ -20,12 +20,12 @@ class FilesystemOperation
 {
 private:
 	string opName;
-	FilesystemObject *objParameter;
 	bool checkPermissions();
 protected:
+	FilesystemObject *objParameter;
 	virtual void performOperation() = 0;
 public:
-	FilesystemOperation(string fOpName, FilesystemObject *fo);
+	FilesystemOperation(string fOpName, FilesystemObject &fo);
 	void execute();
 	string getOperationName();
 	
