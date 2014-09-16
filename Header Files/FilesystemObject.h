@@ -27,7 +27,7 @@ protected:
 public:
 	FilesystemObject(string fName);
 	string getName();
-	virtual void accept(FilesystemVisitor v) = 0;
+	virtual void accept(FilesystemVisitor *v) = 0;
 	void grantAccess(string operationName);
 	void revokeAccess(string operationName);
 	bool checkAccess(string operationName);
