@@ -31,7 +31,7 @@ Folder::~Folder()
 	delete containedObjects;
 }
 
-void Folder::accept(FilesystemVisitor *v)
+void Folder::accept(FilesystemVisitor &v)
 {
 
 }

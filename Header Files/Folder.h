@@ -24,7 +24,7 @@ private:
 public:
 	Folder(string name);
 	~Folder();
-	void accept(FilesystemVisitor *v);
+	void accept(FilesystemVisitor &v);
 	void addFilesystemObject(FilesystemObject *o);
 	vector<FilesystemObject *>& getContainedObjects();
 };

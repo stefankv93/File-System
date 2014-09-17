@@ -25,7 +25,7 @@ public:
 	File(string name);
 	File(string name, byte *content);
 	~File();
-	void accept(FilesystemVisitor *v);
+	void accept(FilesystemVisitor &v);
 	void putContent(byte *fContent);
 	byte *getContent();
 };
