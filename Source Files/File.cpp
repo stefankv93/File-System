@@ -17,7 +17,7 @@ File::File(string name, byte *fContent):content(fContent), FilesystemObject(name
 
 void File::accept(FilesystemVisitor &v)
 {
-
+	v.visitFile(*this);
 }
 
 void File::putContent(byte *fContent) //throws WriteFailedException

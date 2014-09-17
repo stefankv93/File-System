@@ -33,7 +33,7 @@ Folder::~Folder()
 
 void Folder::accept(FilesystemVisitor &v)
 {
-
+	v.visitFolder(*this);
 }
 
 void Folder::addFilesystemObject(FilesystemObject *o)
