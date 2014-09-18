@@ -17,8 +17,8 @@ class Folder;
 class FilesystemVisitor
 {
 public:
-	virtual void visitFile(File f) = 0;
-	virtual void visitFolder(Folder f) = 0;
+	virtual void visitFile(File &f) = 0;
+	virtual void visitFolder(Folder &f) = 0;
 };
 
 #endif  //_FILESYSTEMVISITOR_H
