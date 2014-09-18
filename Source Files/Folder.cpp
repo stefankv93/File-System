@@ -13,6 +13,7 @@
 #include "../Header Files/FilesystemObject.h"
 #include <vector>
 #include <string>
+#include <iostream>
 using namespace std;
 
 Folder::Folder(string name):FilesystemObject(name)
@@ -22,13 +23,14 @@ Folder::Folder(string name):FilesystemObject(name)
 
 Folder::~Folder()
 {
-	for(vector<FilesystemObject *>::iterator it = containedObjects->begin();
+	/*for(vector<FilesystemObject *>::iterator it = containedObjects->begin();
 		it != containedObjects->end(); it++)
 	{
 		delete (*it);
-	}
+	}*/
 
 	delete containedObjects;
+	cout<<"DELETED FOLDER!"<<this->getName()<<endl;
 }
 
 void Folder::accept(FilesystemVisitor &v)
