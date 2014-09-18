@@ -21,7 +21,7 @@ using namespace std;
 
 SearchVisitor::SearchVisitor(string fPath):foundObject(0)
 {
-	filepath = "/root" + fPath;
+	filepath = fPath;
 	searchpath = "/";
 }
 
