@@ -26,6 +26,7 @@ protected:
 	AccessDescriptor *accessDescriptor;
 public:
 	FilesystemObject(string fName);
+	~FilesystemObject();
 	string getName();
 	virtual void accept(FilesystemVisitor &v) = 0;
 	void grantAccess(string operationName);

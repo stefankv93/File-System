@@ -19,6 +19,11 @@ FilesystemObject::FilesystemObject(string fName)
 	accessDescriptor = new AccessDescriptor(this);
 }
 
+FilesystemObject::~FilesystemObject()
+{
+	delete accessDescriptor;
+}
+
 string FilesystemObject::getName()
 {
 	return name;
