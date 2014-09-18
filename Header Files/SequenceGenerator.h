@@ -19,7 +19,6 @@ private:
 	SequenceGenerator(const SequenceGenerator& sg);
 	SequenceGenerator& operator=(const SequenceGenerator& sg);
 protected:
-	static SequenceGenerator INSTANCE;
 	SequenceGenerator();
 public:
 	static SequenceGenerator& instance();

@@ -17,6 +17,7 @@ SequenceGenerator::SequenceGenerator()
 
 SequenceGenerator& SequenceGenerator::instance()
 {
+	static SequenceGenerator INSTANCE;
 	return INSTANCE;
 }
 
