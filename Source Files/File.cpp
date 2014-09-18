@@ -15,6 +15,11 @@ File::File(string name):content(0), FilesystemObject(name) { }
 
 File::File(string name, byte *fContent):content(fContent), FilesystemObject(name) { }
 
+File::~File()
+{
+	content = 0;
+}
+
 void File::accept(FilesystemVisitor &v)
 {
 	v.visitFile(*this);
